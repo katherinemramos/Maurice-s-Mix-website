@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BeatPerfect DJ | Wedding DJ</title>
+  <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <header class="site-header">
+            <nav class="nav container">
+                <a class="brand" href="#home" aria-label="Maurice's Mix">
+                <span class="brand__icon">♪</span>
+                <span class="brand__name">Maurice's Mix</span>
+            </a>
+
+            <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+               ☰ 
+            </button>
+
+            <div class="nav__links" id="navLinks">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#testimonials">Testimonials</a>
+                <a class="btn btn--dark" href="#contact">Book Now</a>
+            </div>
+            </nav>
+        </header>
+
+        <!--Hero-->
+        <main>
+            <section class="hero" id="home">
+                <div class="hero__bg" aria-hidden="true"></div>
+
+                <div class="hero__content container">
+                    <h1 class="hero__title">
+                    Make Your Wedding
+                    <span class="accent">Unforgettable</span>
+                    </h1>
+
+                    <p class="hero__subtitle">
+                        Professional DJ services that bring your dream wedding to life with the perfect soundtracks
+                    </p>
+
+                    <div class="hero__cta">
+                        <a class="btn btn--dark" href="#contact">Book Your Date</a>
+                        <a class="btn btn--ghost" href="#gallery">▶ View Our Work</a>
+                    </div>
+
+                    <a class="hero__scroll" href="#about" aria-label="Scroll to About">⌄</a>
+
+                </div>
+            </section>
+
+            <!--ABOUT-->
+            <section class="section" id="about">
+                <div class="container grid-2">
+                    <div class="about__photo">
+                        <img src="images/dj-mixer.jpg" alt="DJ performing at a wedding reception" />
+                        <div class="badge">
+                            <div class="badge__big">10+</div>
+                            <div class="badge__small">Years of Excellence</div>
+                        </div>
+                    </div>
+
+                    <div class="about__text">
+                        <h2> Creating Magical Moments Since 2016</h2>
+                        <p>
+                            At Maurice's Mix, we believe music is the heartbeat of every great celebration.
+                            We work closely with you to understand your vision and keep your guests on the dance floor.
+                        </p>
+                        <p>
+                            From ceremony audio to reception energy, we handle timelines, announcements, and transportation
+                            so you can be fully present on your day.
+                        </p>
+
+                        <div class="stats">
+                            <div class="stat">
+                                <div class="stat__num">500+</div>
+                                <div class="stat__label">Weddings Celebrated</div>
+                            </div>
+
+                            <div class="stat">
+                                <div class="stat__num">450+</div>
+                                <div class="stat__label">Weddings Celebrated</div>
+                            </div>
+
+                            <div class="stat">
+                                <div class="stat__num">10+</div>
+                                <div class="stat__label">Years Experience</div>
+                            </div>
+
+                            <div class="stat">
+                                <div class="stat__num">50K+</div>
+                                <div class="stat__label">Songs Curated</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--SERVICES / PACKAGES -->
+            <section class="section section--muted" id="services">
+                <div class="container">
+                    <div class="section__head">
+                        <h2>Wedding Packages</h2>
+                        <p> Choose the perfect package for your special day. All packages include professional equipment and experienced service.</p>
+                    </div>
+
+                    <div class="cards-3">
+                        <article class="card">
+                            <h3>Essential</h3>
+                            <p class="muted">Perfect for intimate celebrations</p>
+                            <div class="price">$1,299</div>
+                            <ul class="list">
+                                <li>4 hours of DJ service</li>
+                                <li>Professional sound system</li>
+                                <li>Wireless microphone</li>
+                                <li>Music consultation (1 hour)</li>
+                                <li>Playlist customization</li>
+                                <li>Basic lighting setup</li>
+                            </ul>
+                            <a class="btn btn--outline w-100 package-btn" href="#contact" data-package="Essential">Select Package</a>
+                        </article>
+
+                        <article class="card card--featured">
+                            <div class="pill">Most Popular</div>
+                            <h3>Premium</h3>
+                            <p class="muted">Our most popular package</p>
+                            <div class="price">$1,899</div>
+                            <ul class="list">
+                                <li>6 hours of DJ service</li>
+                                <li>Premium sound system</li>
+                                <li>2 wireless microphones</li>
+                                <li>In-depth consultation (2 hours)</li>
+                                <li> Custom playlist creation</li>
+                                <li>Advanced lighting package</li>
+                                <li>MC services</li>
+                                <li>Online planning portal</li>
+                            </ul>
+                            <a class="btn btn--dark w-100 package-btn" href="#contact" data-package="Premium">Select Package</a>
+                        </article>
+
+                        <article class="card">
+                            <h3>Luxury</h3>
+                            <p class="muted">The ultimate wedding experience</p>
+                            <div class="price">$2,799</div>
+                            <ul class="list">
+                               <li>8 hours of DJ service</li>
+                               <li>Premium sound system</li>
+                               <li>3 wireless microphones</li>
+                               <li>Unlimited consultations</li>
+                               <li>Song mixing + custom edits</li>
+                               <li>Premium lighting design</li>
+                               <li>Fog + cold sparklers</li>
+                               <li>Dance floor monogram</li> 
+                            </ul>
+                            <a class="btn btn--outline w-100 package-btn" href="#contact" data-package="Luxury">Select Package</a>
+                        </article>
+                    </div>
+                </section>
+
+                    <!-- Gallery -->
+                     <section class="section" id="gallery">
+                     <div class="container">
+                        <div class="section__head">
+                            <h2> Recent Celebrations</h2>
+                            <p> Take a look at some of the unforgettable moments we've helped create.</p>
+                        </div>
+
+                        <div class="gallery">
+                            <!-- REPLACE THESE PICS -->
+                             <figure class="gallery__item">
+                                <img src="images/gallery-1.jpg" alt="Wedding reception crowd dancing" />
+                                <figcaption>Dance floor energy</figcaption>
+                             </figure>
+
+                             <figure class="gallery__item">
+                                <img src="images/gallery-2.jpg" alt="Wedding reception crowd dancing" />
+                                <figcaption>First Dance</figcaption>
+                             </figure>
+
+                             <figure class="gallery__item">
+                                <img src="images/gallery-3.jpg" alt="Wedding reception crowd dancing" />
+                                <figcaption>Reception Moments</figcaption>
+                             </figure>
+
+                             <figure class="gallery__item">
+                                <img src="images/gallery-4.jpg" alt="Wedding reception crowd dancing" />
+                                <figcaption>Pro Setup</figcaption>
+                             </figure>
+                        </div>
+                     </div>
+            </section>
+
+            <!-- TESTIMONIALS -->
+             <section class="section section--muted" id="testimonials">
+                <div class="container">
+                    <div class="section__head">
+                        <h2>What Couples Say</h2>
+                        <P> Don't just take our word for it - hear it from our happy couples.</P>
+                    </div>
+
+                    <div class="cards-3">
+                        <article class="card">
+                            <div class="stars" aria-label="t out of 5 stars">★★★★★ </div>
+                            <p class="quote">
+                                "Maurice's Mix made our wedding absolutely perfect! The dancefloor was packed all night!"
+                            </p>
+                            <div class="who">
+                                <strong>Sarah & Michael</strong>
+                                <span class="muted"> Married October 2025</span>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+                            <p class="quote">
+                                “Professional, organized, and the music selection was spot-on. Worth every penny!”
+                            </p>
+                            <div class="who">
+                                <strong>Emily & James</strong>
+                                <span class="muted">Married June 2025</span>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+                            <p class="quote">
+                                “From start to finish, they exceeded expectations. Our guests are still talking about it!”
+                            </p>
+                            <div class="who">
+                                <strong>Jessica & David</strong>
+                                <span class="muted">Married May 2025</span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+             </section>
+
+             <!-- CONTACT -->
+              <section class="section" id="contact">
+                <div class="container">
+                    <div class="section__head">
+                        <h2>Let's Make Magic Together</h2>
+                        <p> Ready to book your wedding DJ> Get in touch and let's start planning your perfect celebration!
+                        </p>
+                    </div>
+
+                    <div class="contact">
+                        <form class="card contact__form" id="inquiryForm"
+                              action="https://formsubmit.co/katherineramos722@gmail.com"
+                              method="POST">
+
+                            <label>
+                                <span>Selected Package</span>
+                                <select name="package" id="selectedPackage" required>
+                                    <option value="" selected disabled>Choose a package above</option>
+                                    <option value="Essential">Essential</option>
+                                    <option value="Premium">Premium</option>
+                                    <option value="Luxury">Luxury</option>
+                                </select>
+                            </label>
+
+                            <div class="form__row">
+                                <label>
+                                    <span>Your Name *</span>
+                                    <input type="text" name="name" placeholder="John & Jane Doe" required />
+                                </label>
+
+                                <label>
+                                    <span>Wedding Date</span>
+                                    <input type="date" name="date" />
+                                </label>
+                            </div>
+
+                            <div class="form__row">
+                                <label>
+                                    <span> Email *</span>
+                                    <input type="email" name="email" placeholder="you@email.com" required />
+                                </label>
+
+                                <label>
+                                    <span>Phone Number</span>
+                                    <input type="tel" name="phone" placeholder="(555) 123-4567" />
+                                </label>
+                            </div>
+
+                            <label>
+                                <span>Tell Us About Your Wedding</span>
+                                <textarea name="message" rows="5" placeholder="Vanue, guest count, music vibe, must-plays, questions..."></textarea>
+                            </label>
+
+                            <button class="btn btn--dark" type="submit">Send Inquiry</button>
+                            <p class="muted small" id="formStatus" role="status" aria-live="polite"></p>
+                        </form>
+
+                        <aside class="contact__side">
+                            <div class="card mini">
+                                <div class="mini__icon">☎</div>
+                                <div>
+                                    <div class="muted small">Call Us</div>
+                                    <strong>(555) 123-4567</strong>
+                                </div>
+                            </div>
+
+                            <div class="card mini">
+                                <div class="mini__icon">✉</div>
+                                <div>
+                                    <div class="muted small">Email Us</div>
+                                    <strong>hello@MauriceMix.com</strong>
+                                </div>
+                            </div>
+
+                            <div class="card mini">
+                                <div class="mini__icon">📍</div>
+                                <div>
+                                    <div class="muted small">Location</div>
+                                    <strong>San Antonio, Texas</strong>
+                                </div>
+                            </div>
+
+                            <div class="card mini">
+                                <div class="muted small">Follow Us</div>
+                                <div class="social">
+                                    <a href="#" aria-label="Instagram">◎</a>
+                                    <a href="#" aria-label="Facebook">f</a>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+    <!-- FOOTER -->
+     <footer class="footer">
+        <div class="container footer__grid">
+            
+            <div>
+                <div class="footer__brand">
+                    <span class="brand__icon">♪</span>
+                    <strong>Maurice's Mix</strong>
+                </div>
+                <p class="muted">
+                    Creating unforgettable wedding memories through music and entertainment since 2016.
+                </p>
+            </div>
+
+            <div>
+                <strong>Quick Links</strong>
+                <div class="footer__links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+
+            <div>
+                <Strong>Get in Touch</Strong>
+                <div class="footer__links">
+                <span class="muted">(555) 123-4567</span>
+                <span class="muted">mauricemix@gmail.com</span>
+                <span class="muted">San Antonio, Texas</span>
+                 </div>
+            </div>
+
+        </div>
+
+        <div class="container footer__bottom">
+            <span class="muted">©<span id="year"></span> Maurice's Mix. All rights reserved.</span>
+        </div>
+     </footer>
+     
+     <script src="script.js"></script>
+    </body>
+</html>
