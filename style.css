@@ -495,16 +495,20 @@ select:focus{
     margin-top: 10px;
 }
 
-.social a{
-    width: 44px;
-    height: 44px;
-    border-radius: 14px;
-    border: 1px solid var(--border);
-    display: grid;
-    place-items: center;
-    font-weight: 900;
+.ig-link a {
     color: var(--accent);
-    background: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+    background: none;
+    border: none;
+    box-shadow: none;
+    width: auto;
+    height: auto;
+}
+
+.ig-link a:hover {
+    text-decoration: underline;
 }
 
 #testimonials .card {
