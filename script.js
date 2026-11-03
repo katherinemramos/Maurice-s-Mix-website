@@ -20,27 +20,6 @@ links?.querySelectorAll("a").forEach(a => {
 //Footer year
 document.getElementById("year").textContent = new Date().getFullYear();
 
-// Package buttons / auto contact form
-document.querySelectorAll(".package-btn").forEach((btn) => {
-    btn.addEventListener("click", (e) => {
-        e.preventDefault();
-
-        const pkg = btn.dataset.package || "";
-        const packageInput = document.getElementById("selectedPackage");
-        const messageBox = document.querySelector('textarea[name="message"]');
-
-        if (packageInput) packageInput.value = pkg;
-
-        if (messageBox && !messageBox.value.trim()) {
-            messageBox.value = `Hi! We are interested in the ${pkg} package.`;
-        }
-
-        document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" });
-
-        document.querySelector('input[name="name"]')?.focus();
-    });
-});
-
 // Contact inquiry autogen text
 document.addEventListener("DOMContentLoaded", () => {
   console.log("script loaded");
@@ -90,8 +69,9 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Dynamic Testimonials from Google Sheets
-const SHEET_ID = "PASTE_YOUR_SHEET_ID_HERE";
-const SHEET_URL = BRO FIX THISSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS;
+// Dynamic Testimonials from Google Sheets (Auto-fed by Google Form)
+const SHEET_ID = "1psq6fecC5hObQsPdLP1Q3spYWbFPEyybv6AJmeIby5U";
+const SHEET_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:json`;
 
 async function loadTestimonials() {
     const container = document.getElementById("testimonial-container");
@@ -107,11 +87,13 @@ async function loadTestimonials() {
 
         container.innerHTML = "";
 
+        // Default Google Form columns:
+        // [0] Timestamp | [1] Name | [2] Date | [3] Stars | [4] Review
         rows.forEach(row => {
-            const name = row.c[0]?.v || "Happy Client";
-            const date = row.c[1]?.v || "";
-            const starsCount = parseInt(row.c[2]?.v, 10) || 5;
-            const quote = row.c[3]?.v || "";
+            const name = row.c[1]?.v || "Happy Client";
+            const date = row.c[2]?.v || "";
+            const starsCount = parseInt(row.c[3]?.v, 10) || 5;
+            const quote = row.c[4]?.v || "";
 
             if (!quote) return; // Skip empty rows
 
